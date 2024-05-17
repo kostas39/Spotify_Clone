@@ -27,12 +27,23 @@ struct SpotifyHomeView: View {
                             
                         }
                 }
+                
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 8) {
+                            ForEach(0..<20) { _ in
+                            Rectangle()
+                                    .frame(width: 10, height: 10)
+                            }
+                        }
+                    }
+                    .scrollIndicators(.hidden)
+                }
             }
             .task {
                 await getData()
             }
         }
-    }
+    
     
     private func getData() async {
         do {
