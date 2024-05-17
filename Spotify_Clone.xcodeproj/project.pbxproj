@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E37B14A2BF81D1C005FB27C /* SpotifyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E37B1492BF81D1C005FB27C /* SpotifyHomeView.swift */; };
 		2EAA49102BD95AC000CF1190 /* Spotify_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA490F2BD95AC000CF1190 /* Spotify_CloneApp.swift */; };
 		2EAA49122BD95AC000CF1190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA49112BD95AC000CF1190 /* ContentView.swift */; };
 		2EAA49142BD95AC100CF1190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EAA49132BD95AC100CF1190 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E37B1492BF81D1C005FB27C /* SpotifyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHomeView.swift; sourceTree = "<group>"; };
 		2EAA490C2BD95AC000CF1190 /* Spotify_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAA490F2BD95AC000CF1190 /* Spotify_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify_CloneApp.swift; sourceTree = "<group>"; };
 		2EAA49112BD95AC000CF1190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E37B1462BF81CDC005FB27C /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				2E37B1482BF81CF5005FB27C /* Components */,
+				2E37B1472BF81CE9005FB27C /* Core */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		2E37B1472BF81CE9005FB27C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2E37B1492BF81D1C005FB27C /* SpotifyHomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2E37B1482BF81CF5005FB27C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		2EAA49032BD95AC000CF1190 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +95,7 @@
 			children = (
 				2EAA490F2BD95AC000CF1190 /* Spotify_CloneApp.swift */,
 				2EAA49112BD95AC000CF1190 /* ContentView.swift */,
+				2E37B1462BF81CDC005FB27C /* Spotify */,
 				2EAA49202BD95BD700CF1190 /* Shared */,
 				2EAA49132BD95AC100CF1190 /* Assets.xcassets */,
 				2EAA49152BD95AC100CF1190 /* Preview Content */,
@@ -178,6 +205,7 @@
 			files = (
 				2EAA49222BD95BF700CF1190 /* ImageLoaderView.swift in Sources */,
 				2EAA49262BD95FC300CF1190 /* DatabaseHelper.swift in Sources */,
+				2E37B14A2BF81D1C005FB27C /* SpotifyHomeView.swift in Sources */,
 				2EAA49122BD95AC000CF1190 /* ContentView.swift in Sources */,
 				2EAA49102BD95AC000CF1190 /* Spotify_CloneApp.swift in Sources */,
 				2EAA49242BD95CB800CF1190 /* Constants.swift in Sources */,
