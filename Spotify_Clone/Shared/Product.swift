@@ -21,4 +21,31 @@ struct Product: Codable, Identifiable {
     let brand, category: String
     let thumbnail: String
     let images: [String]
+    
+    var firstImage: String {
+        images.first ?? Constants.randomImage
+    }
+    
+    static var mock: Product {
+        Product(
+            id: 123,
+            title: "Example",
+            description: "mock description",
+            price: 999,
+            discountPercentage: 15,
+            rating: 4.5,
+            stock: 50,
+            brand: "Apple",
+            category: "Electronic Devices",
+            thumbnail: Constants.randomImage,
+            images: [Constants.randomImage, Constants.randomImage, Constants.randomImage]
+        )
+    }
+}
+
+
+struct ProductRow: Identifiable {
+    let id = UUID().uuidString
+    let title: String
+    let products: [Product]
 }
